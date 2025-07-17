@@ -1,13 +1,21 @@
-# Rule -based chatbot
+def chatbot():
+    print("🤖 Hello! I'm a simple chatbot. Type 'bye' to exit.\n")
+    while True:
+        user_input = input("You: ").lower()
 
-This is a simple rule-based chatbot created for AI Internship Task 1.
+        if "hello" in user_input or "hi" in user_input:
+            print("Bot: Hello! How can I assist you today?")
+        elif "your name" in user_input:
+            print("Bot: I'm RuleBot, your friendly chatbot!")
+        elif "how are you" in user_input:
+            print("Bot: I'm just code, but I'm running smoothly 😄")
+        elif "what can you do" in user_input:
+            print("Bot: I can answer simple questions using predefined rules.")
+        elif "bye" in user_input:
+            print("Bot: Goodbye! Have a great day.")
+            break
+        else:
+            print("Bot: Sorry, I didn't understand that. Can you rephrase?")
 
-## Features
-
--respond to greetings.
--provide simple rule-based greetings 
--Exits gracefully when users type "bye"
-
-## How to run
-1. Open terminal or command prompt
-2. Run: 'python rule_based_chatbpt.py'
+if __name__ == "__main__":
+    chatbot()
