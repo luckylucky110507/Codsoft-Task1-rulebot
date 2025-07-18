@@ -1,2 +1,0 @@
-# Codsoft -Task-rulebot
-# Rule
